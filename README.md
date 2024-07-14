@@ -12,6 +12,6 @@ This Healthcare Chatbot is designed to assist users in understanding their sympt
 ## Technologies Used
 - Python
 - Modin(Intel Extensions used in place of Pandas)
-- Scikit-learn(Intel Extension used in place of Sklearn)
+- Scikit-learnex(Intel Extension used in place of Sklearn)
 - NumPy
 - CSV
