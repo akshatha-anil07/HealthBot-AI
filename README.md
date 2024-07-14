@@ -17,7 +17,8 @@ This Healthcare Chatbot is designed to assist users in understanding their sympt
 - CSV
 
 ## Why Intel Extensions?
-Intel AI Tools facilitate the development and deployment of robust machine learning models. In this project, we utilize its capabilities to analyze symptom data and predict potential health conditions effectively, improving the chatbot's responsiveness and accuracy.
+- Intel AI Tools facilitate the development and deployment of robust machine learning models. In this project, we utilize its capabilities to analyze symptom data and predict potential health conditions effectively, improving the chatbot's responsiveness and accuracy.
+- Folder with "intel_extensions" contains the code for the chatbot which was designed to make a chatbot using intel extensions such as modin and scikit-learn
 
 ## Datasets
 - Train_data.csv: Training dataset containing symptoms and corresponding diseases.
@@ -39,11 +40,11 @@ Intel AI Tools facilitate the development and deployment of robust machine learn
 - User input is processed to match symptoms with known conditions, providing predictions and additional information like 
   disease descriptions and precautions.
 
-## Using Intel extensions
-- Folder with "intel_extensions" contains the code for the chatbot which was designed to make a chatbot using intel extensions such as modin and scikit-learn
+
 
 ## Example Usage
 ![image](https://github.com/user-attachments/assets/8265c07b-9166-4c96-b022-2837edd45a75)
+
 ![image](https://github.com/user-attachments/assets/65f95326-6b1f-4297-b090-4853d0105682)
 
 
