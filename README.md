@@ -1,4 +1,4 @@
-Healthcare Chatbot
+MediGuide- Your Personal Health Navigator
 
 ## Overview
 This Healthcare Chatbot is designed to assist users in understanding their symptoms and suggest possible diseases based on the input symptoms. It uses machine learning models, specifically a Decision Tree Classifier and Support Vector Classifier (SVC), to make predictions about potential health issues.
@@ -52,3 +52,6 @@ MediGuide- Your Personal Health Navigator/
 - Two models (Decision Tree and SVC) are trained on the data.
 - User input is processed to match symptoms with known conditions, providing predictions and additional information like 
   disease descriptions and precautions.
+
+  ![image](https://github.com/user-attachments/assets/4ceb30ed-5d3f-4058-ae3d-ef81c72df169)
+
