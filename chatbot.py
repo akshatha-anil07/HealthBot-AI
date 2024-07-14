@@ -12,8 +12,8 @@ import warnings
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 
-training = pd.read_csv('Training.csv')
-testing= pd.read_csv('Testing.csv')
+training = pd.read_csv('Train_data.csv')
+testing= pd.read_csv('Test_data.csv')
 cols= training.columns
 cols= cols[:-1]
 x = training[cols]
@@ -84,7 +84,7 @@ def calc_condition(exp,days):
 
 def getDescription():
     global description_list
-    with open('symptom_Description.csv') as csv_file:
+    with open('Description.csv') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
         line_count = 0
         for row in csv_reader:
@@ -96,7 +96,7 @@ def getDescription():
 
 def getSeverityDict():
     global severityDictionary
-    with open('Symptom_severity.csv') as csv_file:
+    with open('severity.csv') as csv_file:
 
         csv_reader = csv.reader(csv_file, delimiter=',')
         line_count = 0
@@ -110,7 +110,7 @@ def getSeverityDict():
 
 def getprecautionDict():
     global precautionDictionary
-    with open('symptom_precaution.csv') as csv_file:
+    with open('precaution.csv') as csv_file:
 
         csv_reader = csv.reader(csv_file, delimiter=',')
         line_count = 0
