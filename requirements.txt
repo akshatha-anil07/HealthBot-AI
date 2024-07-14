@@ -1,0 +1,7 @@
+Requirements
+## To run this project, you need the following packages:
+pandas
+numpy
+scikit-learn
+pyttsx3
+Intel Extensions (if using Intel-optimized code)
