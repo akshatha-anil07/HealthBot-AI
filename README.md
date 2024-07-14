@@ -16,6 +16,9 @@ This Healthcare Chatbot is designed to assist users in understanding their sympt
 - NumPy
 - CSV
 
+## Why Intel Extensions?
+Intel AI Tools facilitate the development and deployment of robust machine learning models. In this project, we utilize its capabilities to analyze symptom data and predict potential health conditions effectively, improving the chatbot's responsiveness and accuracy.
+
 ## Datasets
 - Train_data.csv: Training dataset containing symptoms and corresponding diseases.
 - Test_data.csv: Testing dataset for model evaluation.
