@@ -13,8 +13,8 @@ warnings.filterwarnings("ignore", category=DeprecationWarning)
 from sklearnex import patch_sklearn
 patch_sklearn()
 
-training = pd.read_csv('Training.csv')
-testing = pd.read_csv('Testing.csv')
+training = pd.read_csv('dataset/Train_data.csv')
+testing = pd.read_csv('dataset/Test_data.csv')
 cols = training.columns
 cols = cols[:-1]
 x = training[cols]
@@ -67,7 +67,7 @@ def calc_condition(exp, days):
 
 def getDescription():
     global description_list
-    with open('symptom_Description.csv') as csv_file:
+    with open('dataset/Description.csv') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
         for row in csv_reader:
             if len(row) >= 2:
@@ -77,7 +77,7 @@ def getDescription():
 
 def getSeverityDict():
     global severityDictionary
-    with open('Symptom_severity.csv') as csv_file:
+    with open('dataset/severity.csv') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
         for row in csv_reader:
             if len(row) >= 2:  # Ensure there are at least two elements in the row
@@ -90,7 +90,7 @@ def getSeverityDict():
 
 def getprecautionDict():
     global precautionDictionary
-    with open('symptom_precaution.csv') as csv_file:
+    with open('dataset/precaution.csv') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
         for row in csv_reader:
             if len(row) >= 5:
@@ -116,7 +116,7 @@ def check_pattern(dis_list, inp):
         return 0, []
 
 def sec_predict(symptoms_exp):
-    df = pd.read_csv('Training.csv')
+    df = pd.read_csv('dataset/Train_data.csv')
     X = df.iloc[:, :-1]
     y = df['prognosis']
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=20)
