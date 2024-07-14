@@ -16,23 +16,6 @@ This Healthcare Chatbot is designed to assist users in understanding their sympt
 - NumPy
 - CSV
 
-## File Structure
-MediGuide- Your Personal Health Navigator/
-│
-├── dataset/
-│   ├── Train_data.csv
-│   ├── Test_data.csv
-│   ├── Description.csv
-│   ├── severity.csv
-│   └── precaution.csv
-│
-├── intel_extensions/
-│   ├── [Code using Intel extensions files]
-│
-├── chatbot.py
-│
-└── README.md
-
 ## Datasets
 - Train_data.csv: Training dataset containing symptoms and corresponding diseases.
 - Test_data.csv: Testing dataset for model evaluation.
@@ -52,6 +35,9 @@ MediGuide- Your Personal Health Navigator/
 - Two models (Decision Tree and SVC) are trained on the data.
 - User input is processed to match symptoms with known conditions, providing predictions and additional information like 
   disease descriptions and precautions.
+
+## Using Intel extensions
+- Folder with "intel_extensions" contains the code for the chatbot which was designed to make a chatbot using intel extensions such as modin and scikit-learn
 
 ## Example Usage
 ![image](https://github.com/user-attachments/assets/8265c07b-9166-4c96-b022-2837edd45a75)
