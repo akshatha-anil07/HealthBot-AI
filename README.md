@@ -53,5 +53,9 @@ MediGuide- Your Personal Health Navigator/
 - User input is processed to match symptoms with known conditions, providing predictions and additional information like 
   disease descriptions and precautions.
 
-  ![image](https://github.com/user-attachments/assets/4ceb30ed-5d3f-4058-ae3d-ef81c72df169)
+## Example Usage
+![image](https://github.com/user-attachments/assets/8265c07b-9166-4c96-b022-2837edd45a75)
+![image](https://github.com/user-attachments/assets/65f95326-6b1f-4297-b090-4853d0105682)
+
+
 
