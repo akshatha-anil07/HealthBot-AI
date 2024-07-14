@@ -15,3 +15,40 @@ This Healthcare Chatbot is designed to assist users in understanding their sympt
 - Scikit-learnex(Intel Extension used in place of Sklearn)
 - NumPy
 - CSV
+
+## File Structure
+MediGuide- Your Personal Health Navigator/
+│
+├── dataset/
+│   ├── Train_data.csv
+│   ├── Test_data.csv
+│   ├── Description.csv
+│   ├── severity.csv
+│   └── precaution.csv
+│
+├── intel_extensions/
+│   ├── [Code using Intel extensions files]
+│
+├── chatbot.py
+│
+└── README.md
+
+## Datasets
+- Train_data.csv: Training dataset containing symptoms and corresponding diseases.
+- Test_data.csv: Testing dataset for model evaluation.
+- Description.csv: Descriptions of diseases.
+- severity.csv: Severity levels for symptoms.
+- precaution.csv: Precautions for different diseases.
+
+## Usage
+- Run the chatbot:
+      python chatbot.py
+- Follow the prompts in the console to input your name and symptoms.
+- The chatbot will provide disease predictions and related information.
+
+## How It Works
+- The chatbot loads training and testing data from CSV files.
+- It preprocesses the input data, encodes categorical variables, and splits it into training and testing datasets.
+- Two models (Decision Tree and SVC) are trained on the data.
+- User input is processed to match symptoms with known conditions, providing predictions and additional information like 
+  disease descriptions and precautions.
