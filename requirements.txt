@@ -8,4 +8,6 @@ pandas==1.3.5
 # Intel Extensions if using intel optimized code
 scikit-learn-intelex==2021.3.3
 
-
+# Additional Utilities
+csv==1.0  # Part of standard library, but listed for clarity if used explicitly
+re==2.2.1  # Part of standard library, but listed for clarity if used explicitly
