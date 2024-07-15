@@ -30,7 +30,7 @@ SVM| 1.0  | 1.0  |
 
 
 ## Datasets
-- 80% of the data is used for training and 20% is used for testing.
+- 67% of the data is used for training and 33% is used for testing.
 - Train_data.csv: Training dataset containing symptoms and corresponding diseases.
 - Test_data.csv: Testing dataset for model evaluation.
 - Description.csv: Descriptions of diseases.
