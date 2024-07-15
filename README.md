@@ -20,7 +20,7 @@ This Healthcare Chatbot is designed to assist users in understanding their sympt
 - Intel AI Tools facilitate the development and deployment of robust machine learning models. In this project, we utilize its capabilities to analyze symptom data and predict potential health conditions effectively, improving the chatbot's responsiveness and accuracy.
 - Folder with "intel_extensions" contains the code for the chatbot which was designed to make a chatbot using intel extensions such as modin and scikit-learn
 
-## Performace Metrics
+## Performance Metrics
 |        |Accuracy | F1 Score |
 | --------| ----- | ------------- |
 DecisionTreeClassifier| 0.97 | 1.0  |
