@@ -21,6 +21,7 @@ This Healthcare Chatbot is designed to assist users in understanding their sympt
 - Folder with "intel_extensions" contains the code for the chatbot which was designed to make a chatbot using intel extensions such as modin and scikit-learn
 
 ## Datasets
+- 80% of the data is used for training and 20% is used for testing.
 - Train_data.csv: Training dataset containing symptoms and corresponding diseases.
 - Test_data.csv: Testing dataset for model evaluation.
 - Description.csv: Descriptions of diseases.
