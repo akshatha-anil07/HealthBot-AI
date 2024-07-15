@@ -23,8 +23,8 @@ This Healthcare Chatbot is designed to assist users in understanding their sympt
 ## Performace Metrics
 | Accuracy | F1 Score |
 | ------------- | ------------- |
-| 0.97 | 1.0  |
-| 1.0  | 1.0  |
+DecisionTreeClassifier| 0.97 | 1.0  |
+SVM| 1.0  | 1.0  |
 
 ## Datasets
 - 80% of the data is used for training and 20% is used for testing.
