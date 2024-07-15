@@ -3,6 +3,8 @@ import pandas as pd
 
 from sklearn import preprocessing
 from sklearn.tree import DecisionTreeClassifier,_tree
+from sklearn.metrics import f1_score
+
 import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.model_selection import cross_val_score
@@ -37,17 +39,31 @@ testy    = le.transform(testy)
 
 clf1  = DecisionTreeClassifier()
 clf = clf1.fit(x_train,y_train)
-# print(clf.score(x_train,y_train))
-# print ("cross result========")
+#print(clf.score(x_train,y_train))
+#print ("cross result========")
 scores = cross_val_score(clf, x_test, y_test, cv=3)
-# print (scores)
-print (scores.mean())
+#print (scores)
+print ("Accuracy for DecisionTreeClassifier",scores.mean())
 
 
 model=SVC()
 model.fit(x_train,y_train)
-print("for svm: ")
-print(model.score(x_test,y_test))
+
+print("Accuracy for svm: " , model.score(x_test,y_test))
+
+# Decision Tree Classifier
+clf1 = DecisionTreeClassifier()
+clf = clf1.fit(x_train, y_train)
+y_pred_dt = clf.predict(x_test)
+f1_dt = f1_score(y_test, y_pred_dt, average='weighted')
+print("F1 Score for Decision Tree:", f1_dt)
+
+# SVM Classifier
+model = SVC()
+model.fit(x_train, y_train)
+y_pred_svm = model.predict(x_test)
+f1_svm = f1_score(y_test, y_pred_svm, average='weighted')
+print("F1 Score for SVM:", f1_svm)
 
 importances = clf.feature_importances_
 indices = np.argsort(importances)[::-1]
@@ -260,6 +276,8 @@ def tree_to_code(tree, feature_names):
             # print("confidence level is " + str(confidence_level))
 
     recurse(0, 1)
+
+
 getSeverityDict()
 getDescription()
 getprecautionDict()
