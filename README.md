@@ -21,8 +21,8 @@ This Healthcare Chatbot is designed to assist users in understanding their sympt
 - Folder with "intel_extensions" contains the code for the chatbot which was designed to make a chatbot using intel extensions such as modin and scikit-learn
 
 ## Performace Metrics
-| Accuracy | F1 Score |
-| ------------- | ------------- |
+|        |Accuracy | F1 Score |
+| --------| ----- | ------------- |
 DecisionTreeClassifier| 0.97 | 1.0  |
 SVM| 1.0  | 1.0  |
 
