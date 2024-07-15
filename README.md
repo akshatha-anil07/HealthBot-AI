@@ -26,6 +26,9 @@ This Healthcare Chatbot is designed to assist users in understanding their sympt
 DecisionTreeClassifier| 0.97 | 1.0  |
 SVM| 1.0  | 1.0  |
 
+![image](https://github.com/user-attachments/assets/81fd17fa-d94c-4197-a9b9-974888fefdf3)
+
+
 ## Datasets
 - 80% of the data is used for training and 20% is used for testing.
 - Train_data.csv: Training dataset containing symptoms and corresponding diseases.
