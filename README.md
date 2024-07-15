@@ -22,8 +22,8 @@ This Healthcare Chatbot is designed to assist users in understanding their sympt
 
 ## Performace Metrics
       | DecisionTreeClassifier | SVM |
-      |------------------------------|
-      |0.97                   | 1.0 |
+      |------------------------| ----|
+      |0.97                    | 1.0 |
       | 1.0                    | 1.0 |
 
 ## Datasets
